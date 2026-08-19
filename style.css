@@ -1,0 +1,135 @@
+body {
+	font-family:Arial,sans-serif;
+	margin:0;
+	padding:0;
+	background-color:lightblue;
+	color:black;
+}
+
+header{
+	background-color: :darkblue;
+	color:white;
+	text-align:center;
+	padding:30px;
+}
+
+header h1{
+	color:blueviolet;
+	margin:0;
+	font-size:32px;
+}
+
+header p{
+	color:darkred;
+	margin-top:10px;
+	font-size:16px;
+}
+main{
+	width:90%;
+	max-width:1000px;
+	margin:30px auto;
+}
+
+section{
+	background-color:white;
+	padding:20px;
+	margin-bottom:20px;
+	border-radius:10px;
+}
+
+section h2{
+	margin-top:0;
+}
+table{
+	width:100%;
+	border-collapse:collapse;
+	margin-top:15px;
+}
+
+th{
+	background-color:lightblue;
+	padding:12px;
+	textalign:left;
+}
+
+td{
+	padding:12px;
+	border-bottom:1px solid lightgray;
+}
+
+tr:hover{
+	background-color:aliceblue;
+}
+
+.subject-card{
+	background-color:aliceblue;
+	padding:15px;
+	margin-top:15px;
+	border-radious:8px;
+}
+
+.subject-card h3{
+	margin-top:0;
+}
+.subject-card p{
+	margin-bottom:0;
+}
+.tasklist{
+	list-style:none;
+	padding:0;
+}
+.task-list li{
+	padding:10px;
+	margin-bottom:10px;
+	background-color:lavender;
+	border-radius:8px;
+}
+
+.task-list input{
+	margin-right:10px;
+}
+
+.deadline-list{
+	list-style:none;
+	padding:0;
+}
+
+.deadline-list li{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:15px;
+	margin-bottom:10px;
+	background-color:mistyrose;
+	border-radus:8px;
+}
+
+.deadline-list span{
+	font-weigth:bold;
+}
+
+@media (max-width: 550px){
+	header h1{
+		font-size:25px;
+	}
+	main{
+		width:95%;
+	}
+	section{
+		padding:15px;
+	}
+	table{
+		font-size:14px;
+	}
+	th,
+	td{
+		padding:8px;
+
+	}
+
+	.deadline-list li{
+		flex-direction:column;
+		align-items:flex-start;
+		gap:5px;
+	}
+}
